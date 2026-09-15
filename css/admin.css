@@ -1,0 +1,57 @@
+/* =========================================================
+   KAMITO — Admin dashboard styles
+   ========================================================= */
+
+.admin-stats{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.admin-stat{
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+.admin-stat .stat-label{
+  font-size: 12px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.admin-stat .stat-value{
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.admin-section{ margin-top: 48px; }
+.admin-section h3{ font-size: 18px; margin: 0 0 16px; }
+
+.admin-table{ min-width: 900px; }
+
+.inline-form{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.inline-form select{
+  background: var(--bg-alt);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 13px;
+  padding: 8px 10px;
+  font-family: inherit;
+}
+
+.admin-flash{ margin: 24px 0 0; }
+
+@media (max-width: 960px){
+  .admin-stats{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 720px){
+  .admin-stats{ grid-template-columns: 1fr; }
+}

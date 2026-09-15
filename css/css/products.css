@@ -1,0 +1,90 @@
+/* =========================================================
+   KAMITO — Product catalog styles
+   ========================================================= */
+
+.product-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.product-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  transition: border-color .2s ease, transform .2s ease;
+}
+.product-card:hover{ border-color: var(--accent-dim); transform: translateY(-3px); }
+
+.product-flagship{ border-color: rgba(201,255,61,0.4); }
+
+.product-badge{
+  position: absolute;
+  top: 14px; right: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0a0b0c;
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+.product-visual{
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: radial-gradient(120% 120% at 30% 20%, #1b1d20 0%, #0a0b0c 70%);
+  margin-bottom: 18px;
+}
+.product-img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-name{ font-size: 19px; margin: 0 0 4px; }
+.product-tagline{ color: var(--text-faint); font-size: 12px; margin: 0 0 16px; }
+
+.product-specs{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 0 20px;
+  border-top: 1px solid var(--card-border);
+  padding-top: 14px;
+}
+.product-specs li{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.product-specs span{ color: var(--text-faint); }
+.product-specs strong{ color: var(--text-dim); font-weight: 500; }
+
+.product-footer{
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--card-border);
+  padding-top: 16px;
+}
+.product-price{
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+@media (max-width: 960px){ .product-grid{ grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px){ .product-grid{ grid-template-columns: 1fr; } }
