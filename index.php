@@ -358,7 +358,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['newsletter_email'])) 
       <h2 class="cta-title">Be first on the court</h2>
       <p class="cta-desc">The first production run of the Series J-PRO is limited. Pre-order now to lock in yours before the drop.</p>
       <div class="hero-cta" style="justify-content:center">
-        <button class="btn btn-primary" data-open-preorder>Pre-Order Now</button>
+        
         <a href="#specs" class="btn btn-outline">Compare Specs</a>
       </div>
     </div>
