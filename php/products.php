@@ -95,6 +95,7 @@ while ($r = $res->fetch_assoc()) if ($r['Field'] === 'image') $hasImage = true;
     <?php if ($logo): ?><img src="<?= $logo ?>" alt="KAMITO logo"><?php endif; ?>
     <span class="logo-text">KAMITO</span>
   </a>
+    <a href="../index.php">Home</a>
   <a href="products.php">Paddles</a>
   <a href="../index.php#technology">Technology</a>
   <a href="../index.php#specs">Specs</a>

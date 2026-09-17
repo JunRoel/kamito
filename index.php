@@ -146,7 +146,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['newsletter_email'])) 
       <?php else: ?>
         <a href="php/login.php" class="btn btn-ghost btn-sm">Sign in</a>
       <?php endif; ?>
-      <button class="btn btn-primary btn-sm" data-open-preorder>Shop Series J-PRO</button>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
